@@ -1,4 +1,3 @@
-
 package softwares2groupproject;
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -60,20 +59,5 @@ public class Reservation {
             System.out.println("could not find reservation to delete");
         }
     }
-    //itterate through a linked list to find the node for the reservation 
-    reservation_node findReservation(java.text.SimpleDateFormat date, String name){
-        reservation_node currNode = head;
-        while(currNode != null && currNode.name != name && currNode.reservation_date != date ){
-            currNode = currNode.next;
-        }
-        if (currNode != null && currNode.name == name && currNode.reservation_date == date){
-            return currNode;
-        }
-        else {
-            System.out.println("could not find reservation");
-            return null;
-        }
-    }
-
-    
+//TODO add find reservation
 }
