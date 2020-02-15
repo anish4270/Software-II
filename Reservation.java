@@ -60,4 +60,21 @@ public class Reservation {
         }
     }
 //TODO add find reservation
+//itterate through a linked list to find the node for the reservation 
+    reservation_node findReservation(java.text.SimpleDateFormat date, String name){
+        
+        reservation_node currNode = head;
+        
+        while(currNode != null && currNode.name != name && currNode.reservation_date != date ){
+            currNode = currNode.next;
+        }
+        if (currNode != null && currNode.name == name && currNode.reservation_date == date){
+            return currNode;
+        }
+        else {
+            System.out.println("could not find reservation");
+            return null;
+        }
+    }
+
 }
