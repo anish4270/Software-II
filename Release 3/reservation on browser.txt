@@ -1,0 +1,70 @@
+curl -X GET -H "Content-Type: application/json" http://localhost:8080/v1/reservations
+
+[
+  {
+    "id": 1,
+    "dt": {
+      "dayOfMonth": 12,
+      "dayOfWeek": "SUNDAY",
+      "dayOfYear": 71,
+      "month": "MARCH",
+      "monthValue": 3,
+      "year": 2017,
+      "hour": 21,
+      "minute": 1,
+      "nano": 0,
+      "second": 11,
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "userId": 100,
+    "restaurantId": 800,
+    "partySize": 2
+  },
+  {
+    "id": 2,
+    "dt": {
+      "dayOfMonth": 13,
+      "dayOfWeek": "MONDAY",
+      "dayOfYear": 72,
+      "month": "MARCH",
+      "monthValue": 3,
+      "year": 2017,
+      "hour": 21,
+      "minute": 1,
+      "nano": 0,
+      "second": 11,
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "userId": 101,
+    "restaurantId": 800,
+    "partySize": 3
+  },
+  {
+    "id": 3,
+    "dt": {
+      "dayOfMonth": 14,
+      "dayOfWeek": "TUESDAY",
+      "dayOfYear": 73,
+      "month": "MARCH",
+      "monthValue": 3,
+      "year": 2017,
+      "hour": 21,
+      "minute": 1,
+      "nano": 0,
+      "second": 11,
+      "chronology": {
+        "id": "ISO",
+        "calendarType": "iso8601"
+      }
+    },
+    "userId": 102,
+    "restaurantId": 800,
+    "partySize": 5
+  }
+]
